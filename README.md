@@ -80,27 +80,23 @@ from sklearn.model_selection import train_test_split
 
 from sklearn.metrics import mean_squared_error
 
-X = [[1], [2], [3], [4], [5]]  
+X = [[1], [2], [3], [4], [5]]  (Entrada d datos)
 
-y = [2, 4, 6, 8, 10]           
+y = [2, 4, 6, 8, 10]  (Salida d datos)      
 
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42) (División de datos)
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+model = LinearRegression() (Crear y entrenar el modelo)
 
-model = LinearRegression()
+model.fit(X_train, y_train) (Crear y entrenar el modelo)
 
-model.fit(X_train, y_train)
+y_pred = model.predict(X_test) (Predicciones)
 
+error = mean_squared_error(y_test, y_pred) (Evaluación del modelo)
 
-y_pred = model.predict(X_test)
+print("Predicciones:", y_pred) (Resultados)
 
-
-error = mean_squared_error(y_test, y_pred)
-
-
-print("Predicciones:", y_pred)
-
-print("Error promedio cuadrático:", error)
+print("Error promedio cuadrático:", error) (Resultados)
 
 ## 🚀 ¿Por qué usar Scikit-learn para regresión lineal?
 
