@@ -37,11 +37,13 @@ La **regresión lineal** es una técnica de Machine Learning que:
 
 ### Variables independientes y dependientes
 `X = [[1], [2], [3], [4], [5]]  # Entrada`
+
 `y = [2, 4, 6, 8, 10]           # Salida`
 
 ## 4️⃣ Dividir los datos en entrenamiento y prueba
 
 ### Dividimos los datos para entrenar el modelo y probarlo
+
 `X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)`
 
 ## 5️⃣ Entrenar el modelo
@@ -58,7 +60,6 @@ Entrenar el modelo con los datos de entrenamiento
 
 ### Usamos el modelo para predecir valores en los datos de prueba:
 
-Hacer predicciones
 `y_pred = model.predict(X_test)`
 
 `print("Predicciones:", y_pred)`
@@ -67,9 +68,8 @@ Hacer predicciones
 
 ### Calculamos el error promedio cuadrático (MSE) para medir el rendimiento del modelo:
 
-Evaluar el modelo
-
 `error = mean_squared_error(y_test, y_pred)`
+
 `print("Error promedio cuadrático:", error)`
 
 ## 📊 Código completo
