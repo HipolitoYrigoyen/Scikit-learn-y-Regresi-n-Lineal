@@ -25,9 +25,11 @@ La **regresión lineal** es una técnica de Machine Learning que:
 
 ## 2️⃣ Importar librerías necesarias
 
-`from sklearn.linear_model import LinearRegression  # Modelo de regresión lineal`
-`from sklearn.model_selection import train_test_split  # División de datos`
-`from sklearn.metrics import mean_squared_error  # Métrica de evaluación`
+`from sklearn.linear_model import LinearRegression  (Modelo de regresión lineal)`
+
+`from sklearn.model_selection import train_test_split (División de datos)`
+
+`from sklearn.metrics import mean_squared_error  (Métrica de evaluación)`
 
 ## 3️⃣ Preparar los datos
 
