@@ -74,34 +74,39 @@ Entrenar el modelo con los datos de entrenamiento
 
 ## 📊 Código completo
 
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LinearRegression 
+
 from sklearn.model_selection import train_test_split
+
 from sklearn.metrics import mean_squared_error
 
-Datos
-X = [[1], [2], [3], [4], [5]]  # Entrada
-y = [2, 4, 6, 8, 10]           # Salida
+X = [[1], [2], [3], [4], [5]]  
 
-División de datos
+y = [2, 4, 6, 8, 10]           
+
+
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-Crear y entrenar el modelo
 model = LinearRegression()
+
 model.fit(X_train, y_train)
 
-Predicciones
+
 y_pred = model.predict(X_test)
 
-Evaluación del modelo
+
 error = mean_squared_error(y_test, y_pred)
 
-Resultados
+
 print("Predicciones:", y_pred)
+
 print("Error promedio cuadrático:", error)
 
 ## 🚀 ¿Por qué usar Scikit-learn para regresión lineal?
 
-✅ Simplicidad: Hace que implementar algoritmos sea rápido y sencillo.
-✅ Optimización: Los algoritmos están optimizados para ser rápidos y eficientes.
-✅ Integración: Funciona perfectamente con otras librerías como Pandas y NumPy.
+✅ **Simplicidad**: Hace que implementar algoritmos sea rápido y sencillo.
+
+✅ **Optimización**: Los algoritmos están optimizados para ser rápidos y eficientes.
+
+✅ **Integración**: Funciona perfectamente con otras librerías como Pandas y NumPy.
 
